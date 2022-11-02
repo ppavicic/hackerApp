@@ -13,7 +13,7 @@ app.set('view engine', 'ejs')
 
 const port = process.env.PORT || 8000;
 
-app.get('/', requiresAuth(), function (req, res) {
+app.get('/', function (req, res) {
     res.render('index')
 });
 
